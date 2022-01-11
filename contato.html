@@ -6,50 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <navbar>
-        <ul>
+    <nav>
+        <ul class="menu">
             <li>
-                <a href="./index.html">Home</a>
+                <a href="./index.html" class='links'>Home</a>
             </li>
+
             <li>
-                <a href="./contato.html" target="_blank">Contato</a>
+                <a href="./contato.html " class='links'>Contato</a>
             </li>
         </ul>
-    </navbar>
+    </nav>
+    <div class="conteudo">
+        <h1 class="titulo">Entre em contato comigo:</h1>
 
-    <main>
-        <h1>Entre em contato comigo</h1>
-        <img src="./assets/img/WhatsApp Image 2021-12-22 at 12.05.34.jpeg" alt="Mayq-Animated">
 
-        <form>
-            <label for="nome">Nome:</label> <br>
-            <input type="text" id="nome">
-            <br>
-            <br>
-            <label for="email">E-mail:</label> <br>
-            <input type="email" id="email">
-            <br>
-            <br>
-            <label for="assunto">Assunto:</label> <br>
-            <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
-            <br>
-            <br>
-            <button>Enviar</button>
-            <p> <a href="https://www.linkedin.com/in/mayqop/" target="_blank">Meu Linkedin</a> </p>
-            <p><a href="https://github.com/MayqOlipe" target="_blank">Meu GitHub</a></p>
-        </form>
-    </main>
+        <main>
+            <div>
+                <img class=" mayqgif " src=" ./assets/img/WhatsApp Image 2021-12-22 at 12.05.34.jpeg " alt="Mayq-Animated ">
+            </div>
 
-    <div>
-        <h2>Endereço</h2>
 
-        <p>Erminia Chiment, 377</p>
-        <p>São Paulo - SP</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.320944899452!2d-46.58438894888047!3d-23.628674569892606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cbc94f0f07d%3A0xedf5878c8fbad23c!2sR.%20Erm%C3%ADnia%20Chimenti%2C%20377%20-%20Sacom%C3%A3%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004257-230!5e0!3m2!1spt-BR!2sbr!4v1641833167707!5m2!1spt-BR!2sbr"
-            width="450" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </button>
-        </form>
+            <!-- O Br inserido aqui pro espaçamento é somente porque aqui estou usando apenas HTML puro, sera editado no futuro -->
+            <form>
+                <div class="campo ">
+                    <label for=" nome ">Nome:</label> <br>
+                    <input type="text " id="nome ">
+                </div>
+
+                <div class="campo ">
+                    <label for=" email ">E-mail:</label> <br>
+                    <input type="email " id="email ">
+                </div>
+
+                <div class="campo ">
+                    <label for=" assunto ">Assunto:</label> <br>
+                    <textarea name="assunto " id="assunto " cols="45 " rows="5 "></textarea>
+                </div>
+
+                <button>Enviar</button>
+
+            </form>
+        </main>
+
+
+        <div class="end ">
+            <h2 style="color: aliceblue; ">Endereço:</h2>
+
+            <p>Avenida Paulista, 1000 - São Paulo - SP</p>
+
+
+            </button>
+            </form>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.098032248996!2d-46.65413164897046!3d-23.564922384605904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5994f2e15a7d%3A0xdeb92126793e5e90!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1641931336931!5m2!1spt-BR!2sbr "
+            width="1550 " height="300 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
     </div>
