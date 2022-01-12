@@ -21,6 +21,7 @@
             </li>
         </ul>
     </nav>
+
     <div class="conteudo">
         <h1 class="titulo">Entre em contato comigo:</h1>
 
@@ -33,36 +34,43 @@
 
             <!-- O Br inserido aqui pro espaçamento é somente porque aqui estou usando apenas HTML puro, sera editado no futuro -->
             <form>
-                <div class="campo ">
-                    <label for=" nome ">Nome:</label> <br>
-                    <input type="text " id="nome ">
+                <div class='campo'>
+                    <label for='nome'> Nome:</label> <br>
+                    <input type='text' id='nome' onkeyup="validaNome()">
+                    <div id='txtNome'></div>
+                </div id>
+
+                <div class='campo'>
+                    <label for='email '> E-mail:</label> <br>
+                    <input type='email ' id="email" onkeyup="validaEmail()">
+                    <div id='txtEmail'></div>
+
                 </div>
 
-                <div class="campo ">
-                    <label for=" email ">E-mail:</label> <br>
-                    <input type="email " id="email ">
+                <div class='campo '>
+                    <label for='assunto'> Assunto:</label> <br>
+                    <textarea name='assunto ' id='assunto' cols='45 ' rows='5 ' onkeyup="validaAssunto()"></textarea>
+                    <div id="txtAssunto"></div>
                 </div>
 
-                <div class="campo ">
-                    <label for=" assunto ">Assunto:</label> <br>
-                    <textarea name="assunto " id="assunto " cols="45 " rows="5 "></textarea>
-                </div>
-
-                <button>Enviar</button>
+                <button onclick="enviar()">Enviar</button>
 
             </form>
         </main>
 
 
-        <div class="end ">
+        <div class=" end ">
             <h2 style="color: aliceblue; ">Endereço:</h2>
 
             <p>Avenida Paulista, 1000 - São Paulo - SP</p>
-
-
-            </button>
-            </form>
         </div>
+
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.098032248996!2d-46.65413164897046!3d-23.564922384605904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5994f2e15a7d%3A0xdeb92126793e5e90!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1641931336931!5m2!1spt-BR!2sbr "
-            width="1550 " height="300 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
+            width="1550 " height="300 " style="border:0; " allowfullscreen=" " loading="lazy " onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
     </div>
+
+
+    <script src="./assets/js/script.js "></script>
+</body>
+
+</html>
